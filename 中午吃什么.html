@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>重庆酸菜鱼</title>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		
+		<link rel="stylesheet" type="text/css" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.css"/>
+	</head>
+	<body>
+		
+		<div class="container" >
+			
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="row clearfix" style="">
+					<div class="col-md-12 column">
+						<button id="btn1" type="button" class="btn btn-success btn-lg">中午吃什么？</button>
+					</div>
+				</div>
+				<br>
+				<div class="row clearfix">
+					<div class="col-md-12 column">
+						<div class="alert alert-warning alert-dismissable">
+							
+							<h4 id="myTips">
+								????
+							</h4> 
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12 column">
+					<table class="table table-striped" >
+						<thead >
+							<tr>
+								<th>
+									编号
+								</th>
+								<th>
+									Foods
+								</th>
+								<th>
+									价格
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="success" id="1">
+								<td>
+									1
+								</td>
+								<td>
+									青菜豆腐
+								</td>
+								<td>
+									10元
+								</td>
+
+							</tr>
+							<tr class="success" id="2">
+								<td>
+									2
+								</td>
+								<td>
+									红烧豆腐
+								</td>
+								<td>
+									10元
+								</td>
+							</tr>
+							<tr class="success" id="3">
+								<td>
+									3
+								</td>
+								<td>
+									麻婆豆腐
+								</td>
+								<td>
+									10元
+								</td>
+							</tr>
+							<tr class="success" id="4">
+								<td>
+									4
+								</td>
+								<td>
+									鱼香茄子
+								</td>
+								<td>
+									10元
+								</td>
+							</tr>
+							<tr class="success" id="5">
+								<td>
+									5
+								</td>
+								<td>
+									红烧茄子
+								</td>
+								<td>
+									10元
+								</td>
+							</tr>
+							<tr class="success" id="6">
+								<td>
+									6
+								</td>
+								<td>
+									酸辣白菜
+								</td>
+								<td>
+									10元
+								</td>
+							</tr>
+							<tr class="success" id="7">
+								<td>
+									7
+								</td>
+								<td>
+									西红柿鸡蛋
+								</td>
+								<td>
+									11元
+								</td>
+							</tr>
+							<tr class="success" id="8">
+								<td>
+									8
+								</td>
+								<td>
+									黄瓜鸡蛋
+								</td>
+								<td>
+									11元
+								</td>
+							</tr>
+							<tr class="success" id="9">
+								<td>
+									9
+								</td>
+								<td>
+									韭菜鸡蛋
+								</td>
+								<td>
+									12元
+								</td>
+							</tr>
+							<tr class="success" id="10">
+								<td>
+									10
+								</td>
+								<td>
+									青椒鸡蛋
+								</td>
+								<td>
+									11元
+								</td>
+							</tr>
+							<tr class="success" id="11">
+								<td>
+									11
+								</td>
+								<td>
+									酸辣土豆丝
+								</td>
+								<td>
+									10元
+								</td>
+							</tr>
+							<tr class="success" id="12">
+								<td>
+									12
+								</td>
+								<td>
+									火爆猪肝
+								</td>
+								<td>
+									13元
+								</td>
+							</tr>
+							<tr class="success" id="13">
+								<td>
+									13
+								</td>
+								<td>
+									肉末粉条
+								</td>
+								<td>
+									13元
+								</td>
+							</tr>
+							<tr class="success" id="14">
+								<td>
+									14
+								</td>
+								<td>
+									家常豆腐
+								</td>
+								<td>
+									13元
+								</td>
+							</tr>
+							<tr class="success" id="15">
+								<td>
+									15
+								</td>
+								<td>
+									宫爆鸡丁
+								</td>
+								<td>
+									13元
+								</td>
+							</tr>
+							<tr class="success" id="16">
+								<td>
+									16
+								</td>
+								<td>
+									辣子鸡丁
+								</td>
+								<td>
+									13元
+								</td>
+							</tr>
+							<tr class="success" id="17">
+								<td>
+									17
+								</td>
+								<td>
+									青椒肉丝
+								</td>
+								<td>
+									13元
+								</td>
+							</tr>
+							<tr class="success" id="18">
+								<td>
+									18
+								</td>
+								<td>
+									鱼香肉丝
+								</td>
+								<td>
+									13元
+								</td>
+							</tr>
+							<tr class="success" id="19">
+								<td>
+									19
+								</td>
+								<td>
+									木耳肉丝
+								</td>
+								<td>
+									13元
+								</td>
+							</tr>
+							<tr class="success" id="20">
+								<td>
+									20
+								</td>
+								<td>
+									酸辣鸡杂
+								</td>
+								<td>
+									14元
+								</td>
+							</tr>
+							<tr class="success" id="21">
+								<td>
+									21
+								</td>
+								<td>
+									酸菜肉丝
+								</td>
+								<td>
+									13元
+								</td>
+							</tr>
+							<tr class="success" id="22">
+								<td>
+									22
+								</td>
+								<td>
+									腐竹肉丝
+								</td>
+								<td>
+									13元
+								</td>
+							</tr>
+							<tr class="success" id="23">
+								<td>
+									23
+								</td>
+								<td>
+									木须肉
+								</td>
+								<td>
+									13元
+								</td>
+							</tr>
+							<tr class="success" id="24">
+								<td>
+									24
+								</td>
+								<td>
+									酸豆角肉沫
+								</td>
+								<td>
+									13元
+								</td>
+							</tr>
+							<tr class="success" id="25">
+								<td>
+									25
+								</td>
+								<td>
+									红烧鱼块
+								</td>
+								<td>
+									14元
+								</td>
+							</tr>
+							<tr class="success" id="26">
+								<td>
+									26
+								</td>
+								<td>
+									蒜苔肉丝
+								</td>
+								<td>
+									14元
+								</td>
+							</tr>
+							<tr class="success" id="27">
+								<td>
+									27
+								</td>
+								<td>
+									香菇肉丝
+								</td>
+								<td>
+									14元
+								</td>
+							</tr>
+							<tr class="success" id="28">
+								<td>
+									28
+								</td>
+								<td>
+									土豆鸡块
+								</td>
+								<td>
+									14元
+								</td>
+							</tr>
+							<tr class="success" id="29">
+								<td>
+									29
+								</td>
+								<td>
+									回锅肉
+								</td>
+								<td>
+									15元
+								</td>
+							</tr>
+							<tr class="success" id="30">
+								<td>
+									30
+								</td>
+								<td>
+									红烧肉
+								</td>
+								<td>
+									18元
+								</td>
+							</tr>
+							<tr class="success" id="31">
+								<td>
+									31
+								</td>
+								<td>
+									土豆牛肉
+								</td>
+								<td>
+									18元
+								</td>
+							</tr>
+							<tr class="success" id="32">
+								<td>
+									32
+								</td>
+								<td>
+									尖椒腊肉
+								</td>
+								<td>
+									18元
+								</td>
+							</tr>
+							<tr class="success" id="33">
+								<td>
+									33
+								</td>
+								<td>
+									川味香肠
+								</td>
+								<td>
+									18元
+								</td>
+							</tr>
+							<tr class="success" id="34">
+								<td>
+									34
+								</td>
+								<td>
+									红烧肥肠
+								</td>
+								<td>
+									20元
+								</td>
+							</tr>
+							<tr class="success" id="35">
+								<td>
+									35
+								</td>
+								<td>
+									地三鲜
+								</td>
+								<td>
+									11元
+								</td>
+							</tr>
+							<tr class="success" id="36">
+								<td>
+									36
+								</td>
+								<td>
+									香干肉丝
+								</td>
+								<td>
+									13元
+								</td>
+							</tr>
+							<tr class="success" id="37">
+								<td>
+									37
+								</td>
+								<td>
+									炒面
+								</td>
+								<td>
+									10元
+								</td>
+							</tr>
+							<tr class="success" id="38">
+								<td>
+									38
+								</td>
+								<td>
+									鸡蛋炒饭
+								</td>
+								<td>
+									12元
+								</td>
+							</tr>
+							<tr class="success" id="39">
+								<td>
+									39
+								</td>
+								<td>
+									扬州炒饭
+								</td>
+								<td>
+									12元
+								</td>
+							</tr>
+							<tr class="success" id="40">
+								<td>
+									40
+								</td>
+								<td>
+									回锅肉炒饭
+								</td>
+								<td>
+									12元
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		$("#btn1").click(function() {
+			var num = parseInt(Math.random() * 40 + 1);
+			console.log(num);
+			var food = document.getElementById(num).children;
+
+			var foodName = food[1].innerHTML;
+
+			var foodPrice = food[2].innerHTML;
+
+			$("#myTips").html(foodName+foodPrice)
+		})
+	</script>
+</html>
